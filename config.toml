@@ -1,0 +1,4 @@
+baseURL = "http://note.shit-hub.com/"
+languageCode = "en-us"
+title = "My Note"
+themes = "book"
