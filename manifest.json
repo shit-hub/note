@@ -1,6 +1,6 @@
 {
-  "name": "My Note",
-  "short_name": "My Note",
+  "name": "Sanjo's Note",
+  "short_name": "Sanjo's Note",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
