@@ -16,7 +16,11 @@ bookToC: false
   - Casa System, Guangzhou
     - 2019 - Present
     - Embedded Software Development Engineer
-- 
+- Programming Ability
+  - Programming Languages:
+    - Major: C/Go/Rust 
+    - Minor: Shell/C++/HTML/Python
+  - Platform Ability: AVR/stm32/Linux/Docker/Kubernetes
 <--->
 ![image](picture.png)
 {{< /columns >}}
