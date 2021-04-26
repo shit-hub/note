@@ -32,3 +32,4 @@ jobs:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_branch: pages
         publish_dir: ./public
+        cname: note.shit-hub.com
