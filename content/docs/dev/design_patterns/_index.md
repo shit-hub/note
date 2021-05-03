@@ -1,6 +1,6 @@
 ---
-title: "Sec"
-weight: 3
+title: "Design Patterns"
+weight: 10
 bookFlatSection: false
 bookToc: true
 bookHidden: false

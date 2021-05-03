@@ -1,6 +1,6 @@
 ---
-title: "Sec"
-weight: 3
+title: "Python"
+weight: 6
 bookFlatSection: false
 bookToc: true
 bookHidden: false

@@ -2,7 +2,7 @@
 title: "Ops"
 weight: 2
 bookFlatSection: false
-bookToc: false
+bookToc: true
 bookHidden: false
 bookCollapseSection: true
 bookComments: false

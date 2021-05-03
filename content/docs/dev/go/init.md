@@ -1,6 +1,6 @@
 ---
 title: "Init--初始化函数"
-weight: 1
+weight: 3
 bookFlatSection: false
 bookToc: true
 bookHidden: false

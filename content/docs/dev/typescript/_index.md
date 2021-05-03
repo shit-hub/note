@@ -1,6 +1,6 @@
 ---
-title: "Sec"
-weight: 3
+title: "Typescript"
+weight: 8
 bookFlatSection: false
 bookToc: true
 bookHidden: false

@@ -1,6 +1,6 @@
 ---
-title: "Sec"
-weight: 3
+title: "Data Structure"
+weight: 9
 bookFlatSection: false
 bookToc: true
 bookHidden: false

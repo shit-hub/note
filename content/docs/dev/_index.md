@@ -2,7 +2,7 @@
 title: "Dev"
 weight: 1
 bookFlatSection: false
-bookToc: false
+bookToc: true
 bookHidden: false
 bookCollapseSection: true
 bookComments: false

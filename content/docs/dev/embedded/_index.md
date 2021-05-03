@@ -1,6 +1,6 @@
 ---
-title: "Sec"
-weight: 3
+title: "Embedded"
+weight: 7
 bookFlatSection: false
 bookToc: true
 bookHidden: false
