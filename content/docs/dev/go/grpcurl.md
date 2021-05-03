@@ -1,6 +1,6 @@
 ---
 title: "安装Grpcurl"
-weight: 3
+weight: 5
 # bookFlatSection: false
 # bookToc: true
 # bookHidden: false
