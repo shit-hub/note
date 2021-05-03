@@ -8,6 +8,8 @@ bookCollapseSection: false
 bookComments: false
 ---
 
+<!--more-->
+
 ## 作用
 - 初始化不能采用初始化表达式初始化的变量。
 - 程序运行前的注册。

@@ -7,3 +7,8 @@ bookHidden: false
 bookCollapseSection: true
 bookComments: false
 ---
+
+## Operations
+Record something about software platform operations. 
+## Directory
+{{<section>}}

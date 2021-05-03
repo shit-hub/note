@@ -7,6 +7,9 @@ weight: 2
 # bookCollapseSection: false
 # bookComments: true
 ---
+
+<!--more-->
+
 Environment: Ubuntu + Go 1.13
 ## Open Go module 
 Add forrowing environment variable:

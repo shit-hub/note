@@ -8,6 +8,8 @@ weight: 1
 # bookComments: true
 ---
 
+<!--more-->
+
 ## 作用
 打印与由Package相关参数（package，const，func，type，var，method或struct字段）标识的项目相关的文档注释，然后单行总结“ 项目（包的包级别声明，类型的方法等）。
 

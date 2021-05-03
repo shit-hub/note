@@ -7,6 +7,9 @@ bookHidden: false
 bookCollapseSection: false
 bookComments: false
 ---
+
+<!--more-->
+
 ## 作用
 避免一些函数被频繁调用，不断地有函数入栈，即函数栈，会造成栈空间或栈内存的大量消耗。
 

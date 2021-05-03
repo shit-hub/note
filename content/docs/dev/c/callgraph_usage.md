@@ -7,6 +7,9 @@ bookHidden: false
 bookCollapseSection: false
 bookComments: false
 ---
+
+<!--more-->
+
 ## 介绍
 Callgraph 是一个生成C代码函数调用树的工具，与以下三个工具配合使用：
 - cflow/calltree: 用于生成 C 函数调用树

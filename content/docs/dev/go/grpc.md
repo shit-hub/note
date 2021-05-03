@@ -7,6 +7,9 @@ weight: 4
 # bookCollapseSection: false
 # bookComments: true
 ---
+
+<!--more-->
+
 ## Install
 1. Install [protoc](https://github.com/protocolbuffers/protobuf/releases)
 ```bash
