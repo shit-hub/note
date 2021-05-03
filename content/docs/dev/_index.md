@@ -7,6 +7,9 @@ bookHidden: false
 bookCollapseSection: true
 bookComments: false
 ---
+
+<!--more-->
+
 ## Development 
 Record something about software development. 
 ## Directory

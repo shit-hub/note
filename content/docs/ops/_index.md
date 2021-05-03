@@ -8,6 +8,8 @@ bookCollapseSection: true
 bookComments: false
 ---
 
+<!--more-->
+
 ## Operations
 Record something about software platform operations. 
 ## Directory

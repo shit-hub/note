@@ -8,6 +8,8 @@ bookCollapseSection: true
 bookComments: false
 ---
 
+<!--more-->
+
 ## Security
 Record something about software security. 
 ## Directory

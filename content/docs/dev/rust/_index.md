@@ -8,5 +8,7 @@ bookCollapseSection: true
 bookComments: false
 ---
 
+<!--more-->
+
 ## Directory
 {{<section>}}
