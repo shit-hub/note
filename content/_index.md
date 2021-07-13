@@ -22,7 +22,7 @@ bookToC: false
     - Minor: Shell/C++/HTML/Python
   - Platform Ability: AVR/stm32/Linux/Docker/Kubernetes...
 <--->
-![image](picture.png)
+![image](favicon.png)
 {{< /columns >}}
 
 ## 免责声明
