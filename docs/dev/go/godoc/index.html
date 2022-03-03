@@ -1,85 +1,330 @@
-<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.85.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Go doc--文档管理器"><meta property="og:description" content><meta property="og:type" content="article"><meta property="og:url" content="http://note.shit-hub.com/docs/dev/go/godoc/"><meta property="article:section" content="docs"><title>Go doc--文档管理器 | Sanjo's Note</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.29ec7573efa1fe440b6a4c7fb02b463c6cc982428b0e50b8f81383bdccbcdf70.css integrity="sha256-Kex1c++h/kQLakx/sCtGPGzJgkKLDlC4+BODvcy833A="><script defer src=/en.search.min.181186f0121e93f8c8e64d68f709af8edea0b04fa06ac030e932801b8befd4e5.js integrity="sha256-GBGG8BIek/jI5k1o9wmvjt6gsE+gasAw6TKAG4vv1OU="></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><img src=/logo.svg alt=Logo><span>Sanjo's Note</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-4be50b0d8f9a243d0d0b85d5143097d6 class=toggle checked>
-<label for=section-4be50b0d8f9a243d0d0b85d5143097d6 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/>Dev</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-f3aae2dfb959daf3bd76ab1293f97718 class=toggle>
-<label for=section-f3aae2dfb959daf3bd76ab1293f97718 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/c/>C</a>
-<span>▾</span></label><ul><li><a href=http://note.shit-hub.com/docs/dev/c/callgraph_usage/>Callgraph--函数调用树生成器</a></li><li><a href=http://note.shit-hub.com/docs/dev/c/libevent/>Libevent库</a></li><li><a href=http://note.shit-hub.com/docs/dev/c/inline/>关键字Inline的使用说明</a></li><li><a href=http://note.shit-hub.com/docs/dev/c/__builtin_expect/>__builtin_expect使用</a></li></ul></li><li><input type=checkbox id=section-83b43dc380d89a15292b7c7f90db4d08 class=toggle checked>
-<label for=section-83b43dc380d89a15292b7c7f90db4d08 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/go/>Go</a>
-<span>▾</span></label><ul><li><a href=http://note.shit-hub.com/docs/dev/go/godoc/ class=active>Go doc--文档管理器</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/gomod/>Go mod--依赖管理器</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/init/>Init--初始化函数</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/grpc/>Grpc使用</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/grpcurl/>安装Grpcurl</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/gvm/>使用Gvm更换go版本</a></li></ul></li><li><input type=checkbox id=section-f619b6e327eaa3355b9c0d46a7177537 class=toggle>
-<label for=section-f619b6e327eaa3355b9c0d46a7177537 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/rust/>Rust</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-bacd6c372af370f6c0f6e8f2c97e77c6 class=toggle>
-<label for=section-bacd6c372af370f6c0f6e8f2c97e77c6 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/html/>Html</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-18a1ed8932c892987ac4d41b8b6e2862 class=toggle>
-<label for=section-18a1ed8932c892987ac4d41b8b6e2862 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/shell/>Shell</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-a25fe3d5e31775b296acf374d7cdac92 class=toggle>
-<label for=section-a25fe3d5e31775b296acf374d7cdac92 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/python/>Python</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-cba791f4590f972e87b05243471ea9d0 class=toggle>
-<label for=section-cba791f4590f972e87b05243471ea9d0 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/embedded/>Embedded</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-ee67ceb555234cdb4d5811054af58f1e class=toggle>
-<label for=section-ee67ceb555234cdb4d5811054af58f1e class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/typescript/>Typescript</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-f579a6824312ae990e12bf4f08f15c52 class=toggle>
-<label for=section-f579a6824312ae990e12bf4f08f15c52 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/data_structure/>Data Structure</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-084e06af829cf07f4d764b9d738b25df class=toggle>
-<label for=section-084e06af829cf07f4d764b9d738b25df class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/design_patterns/>Design Patterns</a>
-<span>▾</span></label><ul></ul></li></ul></li><li><input type=checkbox id=section-5b57649c0c94af0841dac91e624830af class=toggle>
-<label for=section-5b57649c0c94af0841dac91e624830af class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/>Ops</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-55634a842581e88f2b6b4ba234a340f1 class=toggle>
-<label for=section-55634a842581e88f2b6b4ba234a340f1 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/os/>OS</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-a7fa76239b3f254712a0bd00737c9cf7 class=toggle>
-<label for=section-a7fa76239b3f254712a0bd00737c9cf7 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/os/linux/>Linux</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-3b75d512b66a3f6a9311ac4eb390fc52 class=toggle>
-<label for=section-3b75d512b66a3f6a9311ac4eb390fc52 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/os/mac/>Mac</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-10aceb9432f560832a1eb9da32b37598 class=toggle>
-<label for=section-10aceb9432f560832a1eb9da32b37598 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/os/windows/>Windows</a>
-<span>▾</span></label><ul></ul></li></ul></li><li><input type=checkbox id=section-0ae46ccd2a86c836c12df1c42962baec class=toggle>
-<label for=section-0ae46ccd2a86c836c12df1c42962baec class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/git/>Git</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-ce1a0b2249b91257b6eb9b13ba184d57 class=toggle>
-<label for=section-ce1a0b2249b91257b6eb9b13ba184d57 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/git/gitlab/>Gitlab</a>
-<span>▾</span></label><ul></ul></li></ul></li><li><input type=checkbox id=section-8b4f6cc173b540c44c996dbd71828c31 class=toggle>
-<label for=section-8b4f6cc173b540c44c996dbd71828c31 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/blog/>Blog</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-7a7877f8ee9a7bdd40d33094b29ce86d class=toggle>
-<label for=section-7a7877f8ee9a7bdd40d33094b29ce86d class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/tools/>Tools</a>
-<span>▾</span></label><ul><li><a href=http://note.shit-hub.com/docs/ops/tools/accurev/>Accurev使用</a></li><li><a href=http://note.shit-hub.com/docs/ops/tools/samba/>Samba</a></li><li><a href=http://note.shit-hub.com/docs/ops/tools/swagger/>Swagger</a></li><li><a href=http://note.shit-hub.com/docs/ops/tools/bt_pannel/>宝塔面板</a></li><li><a href=http://note.shit-hub.com/docs/ops/tools/v2ray/>SS/V2ray搭建</a></li></ul></li><li><input type=checkbox id=section-b424141921a30487c09eab3a187e5859 class=toggle>
-<label for=section-b424141921a30487c09eab3a187e5859 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/monitoring/>Monitoring</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-dd13ca0b1791f4b1ce5f65264a4c2870 class=toggle>
-<label for=section-dd13ca0b1791f4b1ce5f65264a4c2870 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/virtualization/>Virtualization</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-0c43635159f56a3eaaed5254248b6848 class=toggle>
-<label for=section-0c43635159f56a3eaaed5254248b6848 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/virtualization/kvm/>Kvm</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-a392852729d13eeca7e8425af8404d41 class=toggle>
-<label for=section-a392852729d13eeca7e8425af8404d41 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/virtualization/docker/>Docker</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-397d882613a10ac4c350e31b1fb75480 class=toggle>
-<label for=section-397d882613a10ac4c350e31b1fb75480 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/virtualization/kubernetes/>Kubernetes</a>
-<span>▾</span></label><ul></ul></li></ul></li></ul></li><li><input type=checkbox id=section-b8aef4a4c06a66376909add3cb03de9e class=toggle>
-<label for=section-b8aef4a4c06a66376909add3cb03de9e class="flex justify-between"><a href=http://note.shit-hub.com/docs/sec/>Sec</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-9df867f1ccb076f4c1a4602e12169b93 class=toggle>
-<label for=section-9df867f1ccb076f4c1a4602e12169b93 class="flex justify-between"><a href=http://note.shit-hub.com/docs/others/>Others</a>
-<span>▾</span></label><ul><li><a href=http://note.shit-hub.com/docs/others/dome/>职场相关</a></li></ul></li></ul><p align=center><img align=center src=/gopher.gif></p></nav><script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta name=generator content="Hugo 0.93.1">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content>
+<meta name=theme-color content="#FFFFFF"><meta property="og:title" content="Go doc--文档管理器">
+<meta property="og:description" content>
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://note.shit-hub.com/docs/dev/go/godoc/"><meta property="article:section" content="docs">
+<title>Go doc--文档管理器 | Sanjo's Note</title><link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.29ec7573efa1fe440b6a4c7fb02b463c6cc982428b0e50b8f81383bdccbcdf70.css integrity="sha256-Kex1c++h/kQLakx/sCtGPGzJgkKLDlC4+BODvcy833A=">
+<script defer src=/en.search.min.db412e0d692cc9ac10c9a87942cec79a7b3630f3060879205bd2534691fa45f2.js integrity="sha256-20EuDWksyawQyah5Qs7Hmns2MPMGCHkgW9JTRpH6RfI="></script>
+</head><body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a href=/><img src=/logo.svg alt=Logo><span>Sanjo's Note</span>
+</a>
+</h2><div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
+<li>
+<input type=checkbox id=section-4be50b0d8f9a243d0d0b85d5143097d6 class=toggle checked>
+<label for=section-4be50b0d8f9a243d0d0b85d5143097d6 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/>Dev</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-f3aae2dfb959daf3bd76ab1293f97718 class=toggle>
+<label for=section-f3aae2dfb959daf3bd76ab1293f97718 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/c/>C</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a href=http://note.shit-hub.com/docs/dev/c/callgraph_usage/>Callgraph--函数调用树生成器</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/c/libevent/>Libevent库</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/c/inline/>关键字Inline的使用说明</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/c/__builtin_expect/>__builtin_expect使用</a>
+</li></ul></li><li>
+<input type=checkbox id=section-83b43dc380d89a15292b7c7f90db4d08 class=toggle checked>
+<label for=section-83b43dc380d89a15292b7c7f90db4d08 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/go/>Go</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a href=http://note.shit-hub.com/docs/dev/go/godoc/ class=active>Go doc--文档管理器</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/gomod/>Go mod--依赖管理器</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/init/>Init--初始化函数</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/grpc/>Grpc使用</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/grpcurl/>安装Grpcurl</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/gvm/>使用Gvm更换go版本</a>
+</li></ul></li><li>
+<input type=checkbox id=section-f619b6e327eaa3355b9c0d46a7177537 class=toggle>
+<label for=section-f619b6e327eaa3355b9c0d46a7177537 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/rust/>Rust</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-bacd6c372af370f6c0f6e8f2c97e77c6 class=toggle>
+<label for=section-bacd6c372af370f6c0f6e8f2c97e77c6 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/html/>Html</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-18a1ed8932c892987ac4d41b8b6e2862 class=toggle>
+<label for=section-18a1ed8932c892987ac4d41b8b6e2862 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/shell/>Shell</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-a25fe3d5e31775b296acf374d7cdac92 class=toggle>
+<label for=section-a25fe3d5e31775b296acf374d7cdac92 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/python/>Python</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-cba791f4590f972e87b05243471ea9d0 class=toggle>
+<label for=section-cba791f4590f972e87b05243471ea9d0 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/embedded/>Embedded</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-ee67ceb555234cdb4d5811054af58f1e class=toggle>
+<label for=section-ee67ceb555234cdb4d5811054af58f1e class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/typescript/>Typescript</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-f579a6824312ae990e12bf4f08f15c52 class=toggle>
+<label for=section-f579a6824312ae990e12bf4f08f15c52 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/data_structure/>Data Structure</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-084e06af829cf07f4d764b9d738b25df class=toggle>
+<label for=section-084e06af829cf07f4d764b9d738b25df class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/design_patterns/>Design Patterns</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li></ul></li><li>
+<input type=checkbox id=section-5b57649c0c94af0841dac91e624830af class=toggle>
+<label for=section-5b57649c0c94af0841dac91e624830af class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/>Ops</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-55634a842581e88f2b6b4ba234a340f1 class=toggle>
+<label for=section-55634a842581e88f2b6b4ba234a340f1 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/os/>OS</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-a7fa76239b3f254712a0bd00737c9cf7 class=toggle>
+<label for=section-a7fa76239b3f254712a0bd00737c9cf7 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/os/linux/>Linux</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-3b75d512b66a3f6a9311ac4eb390fc52 class=toggle>
+<label for=section-3b75d512b66a3f6a9311ac4eb390fc52 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/os/mac/>Mac</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-10aceb9432f560832a1eb9da32b37598 class=toggle>
+<label for=section-10aceb9432f560832a1eb9da32b37598 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/os/windows/>Windows</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li></ul></li><li>
+<input type=checkbox id=section-0ae46ccd2a86c836c12df1c42962baec class=toggle>
+<label for=section-0ae46ccd2a86c836c12df1c42962baec class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/git/>Git</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-ce1a0b2249b91257b6eb9b13ba184d57 class=toggle>
+<label for=section-ce1a0b2249b91257b6eb9b13ba184d57 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/git/gitlab/>Gitlab</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li></ul></li><li>
+<input type=checkbox id=section-8b4f6cc173b540c44c996dbd71828c31 class=toggle>
+<label for=section-8b4f6cc173b540c44c996dbd71828c31 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/blog/>Blog</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-7a7877f8ee9a7bdd40d33094b29ce86d class=toggle>
+<label for=section-7a7877f8ee9a7bdd40d33094b29ce86d class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/tools/>Tools</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a href=http://note.shit-hub.com/docs/ops/tools/accurev/>Accurev使用</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/ops/tools/samba/>Samba</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/ops/tools/swagger/>Swagger</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/ops/tools/bt_pannel/>宝塔面板</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/ops/tools/v2ray/>SS/V2ray搭建</a>
+</li></ul></li><li>
+<input type=checkbox id=section-b424141921a30487c09eab3a187e5859 class=toggle>
+<label for=section-b424141921a30487c09eab3a187e5859 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/monitoring/>Monitoring</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-dd13ca0b1791f4b1ce5f65264a4c2870 class=toggle>
+<label for=section-dd13ca0b1791f4b1ce5f65264a4c2870 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/virtualization/>Virtualization</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-0c43635159f56a3eaaed5254248b6848 class=toggle>
+<label for=section-0c43635159f56a3eaaed5254248b6848 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/virtualization/kvm/>Kvm</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-a392852729d13eeca7e8425af8404d41 class=toggle>
+<label for=section-a392852729d13eeca7e8425af8404d41 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/virtualization/docker/>Docker</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-397d882613a10ac4c350e31b1fb75480 class=toggle>
+<label for=section-397d882613a10ac4c350e31b1fb75480 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/virtualization/kubernetes/>Kubernetes</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li></ul></li></ul></li><li>
+<input type=checkbox id=section-b8aef4a4c06a66376909add3cb03de9e class=toggle>
+<label for=section-b8aef4a4c06a66376909add3cb03de9e class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/sec/>Sec</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-9df867f1ccb076f4c1a4602e12169b93 class=toggle>
+<label for=section-9df867f1ccb076f4c1a4602e12169b93 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/others/>Others</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a href=http://note.shit-hub.com/docs/others/dome/>职场相关</a>
+</li></ul></li></ul><p align=center>
+<img align=center src=/gopher.gif>
+</p></nav><script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div></aside><div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
 <strong>Go doc--文档管理器</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><a href=#作用>作用</a></li><li><a href=#使用方法>使用方法</a></li><li><a href=#编写文档规则>编写文档规则</a></li><li><a href=#godoc>Godoc</a><ul><li><a href=#安装>安装</a></li><li><a href=#使用方法-1>使用方法</a></li></ul></li><li><a href=#参考文档>参考文档</a></li></ul></nav></aside></header><article class=markdown><h2 id=作用>作用
-<a class=anchor href=#%e4%bd%9c%e7%94%a8>#</a></h2><p>打印与由Package相关参数（package，const，func，type，var，method或struct字段）标识的项目相关的文档注释，然后单行总结“ 项目（包的包级别声明，类型的方法等）。</p><h2 id=使用方法>使用方法
-<a class=anchor href=#%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95>#</a></h2><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>go doc <span style=color:#f92672>[</span>-u<span style=color:#f92672>]</span> <span style=color:#f92672>[</span>-c<span style=color:#f92672>]</span> <span style=color:#f92672>[</span>package|<span style=color:#f92672>[</span>package.<span style=color:#f92672>]</span>symbol<span style=color:#f92672>[</span>.methodOrField<span style=color:#f92672>]]</span>
-</code></pre></div><table><thead><tr><th style=text-align:left>Option</th><th>Description</th></tr></thead><tbody><tr><td style=text-align:left>-all</td><td>显示所有文档</td></tr><tr><td style=text-align:left>-c</td><td>匹配程序实体时，大小写敏感</td></tr><tr><td style=text-align:left>-cmd</td><td>将命令（main包）视为常规程序包</td></tr><tr><td style=text-align:left>-src</td><td>显示完整源代码</td></tr><tr><td style=text-align:left>-u</td><td>显示未导出的程序实体</td></tr></tbody></table><h2 id=编写文档规则>编写文档规则
-<a class=anchor href=#%e7%bc%96%e5%86%99%e6%96%87%e6%a1%a3%e8%a7%84%e5%88%99>#</a></h2><ol><li>注释: <code>// xxx</code></li><li>段落：行首字母大写</li><li>换行：添加一个注释空行</li><li>预格式化（示例代码）：行首缩进</li><li>在<code>package</code>, <code>const</code>, <code>type</code>, <code>func</code>等关键字上面并且紧邻关键字的注释才会被展示<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#75715e>// 此行注释被省略
-</span><span style=color:#75715e></span>
-<span style=color:#75715e>// 此行注释被展示 
-</span><span style=color:#75715e>// 
-</span><span style=color:#75715e>// 此行注释被展示2 
-</span><span style=color:#75715e></span><span style=color:#f92672>package</span> <span style=color:#a6e22e>banana</span>
-</code></pre></div></li><li><code>type</code>, <code>const</code>, <code>func</code>以名称为注释的开头, package以Package name为注释的开头<div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#75715e>// Package banana ...
-</span><span style=color:#75715e></span><span style=color:#f92672>package</span> <span style=color:#a6e22e>banana</span>
-
-<span style=color:#75715e>// Xyz ...
-</span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>Xyz</span> = <span style=color:#ae81ff>1</span>
-
-<span style=color:#75715e>// Abc ...
-</span><span style=color:#75715e></span><span style=color:#66d9ef>type</span> <span style=color:#a6e22e>Abc</span> <span style=color:#66d9ef>struct</span> {}
-
-<span style=color:#75715e>// Bcd ...
-</span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>Bcd</span>() {}
-</code></pre></div></li><li>package注释应不超过三行， 如果超过三行，应放到<code>doc.go</code>中</li><li>如果有多个package注释，按照文件名排序显示， 最多显示523字节</li></ol><h2 id=godoc>Godoc
-<a class=anchor href=#godoc>#</a></h2><p>用途及用法于<code>go doc</code>类似，但可用于http服务器，方便文档查看。</p><h3 id=安装>安装
-<a class=anchor href=#%e5%ae%89%e8%a3%85>#</a></h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>go install golang.org/x/tools/cmd/godoc@latest
-</code></pre></div><h3 id=使用方法-1>使用方法
-<a class=anchor href=#%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95-1>#</a></h3><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash>godoc -http :8080 --index -play
-</code></pre></div><p>然后浏览器访问<code>http://127.0.0.1:8080</code>即可</p><h2 id=参考文档>参考文档
-<a class=anchor href=#%e5%8f%82%e8%80%83%e6%96%87%e6%a1%a3>#</a></h2><ul><li><a href=https://golang.org/cmd/go/#hdr-Show_documentation_for_package_or_symbol>Go doc官方说明</a></li><li><a href=https://blog.golang.org/godoc>Godoc官方博文</a></li><li><a href=https://godoc.org/github.com/fluhus/godoc-tricks>Godoc技巧</a></li></ul></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><a href=#作用>作用</a></li><li><a href=#使用方法>使用方法</a></li><li><a href=#编写文档规则>编写文档规则</a></li><li><a href=#godoc>Godoc</a><ul><li><a href=#安装>安装</a></li><li><a href=#使用方法-1>使用方法</a></li></ul></li><li><a href=#参考文档>参考文档</a></li></ul></nav></div></aside></main></body></html>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div><aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li><a href=#作用>作用</a></li><li><a href=#使用方法>使用方法</a></li><li><a href=#编写文档规则>编写文档规则</a></li><li><a href=#godoc>Godoc</a>
+<ul>
+<li><a href=#安装>安装</a></li><li><a href=#使用方法-1>使用方法</a></li></ul></li><li><a href=#参考文档>参考文档</a></li></ul></nav></aside></header><article class=markdown><h2 id=作用>
+作用
+<a class=anchor href=#%e4%bd%9c%e7%94%a8>#</a>
+</h2><p>打印与由Package相关参数（package，const，func，type，var，method或struct字段）标识的项目相关的文档注释，然后单行总结“ 项目（包的包级别声明，类型的方法等）。</p><h2 id=使用方法>
+使用方法
+<a class=anchor href=#%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95>#</a>
+</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>go doc <span style=color:#f92672>[</span>-u<span style=color:#f92672>]</span> <span style=color:#f92672>[</span>-c<span style=color:#f92672>]</span> <span style=color:#f92672>[</span>package|<span style=color:#f92672>[</span>package.<span style=color:#f92672>]</span>symbol<span style=color:#f92672>[</span>.methodOrField<span style=color:#f92672>]]</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style=text-align:left>Option</th><th>Description</th></tr></thead><tbody>
+<tr>
+<td style=text-align:left>-all</td><td>显示所有文档</td></tr><tr>
+<td style=text-align:left>-c</td><td>匹配程序实体时，大小写敏感</td></tr><tr>
+<td style=text-align:left>-cmd</td><td>将命令（main包）视为常规程序包</td></tr><tr>
+<td style=text-align:left>-src</td><td>显示完整源代码</td></tr><tr>
+<td style=text-align:left>-u</td><td>显示未导出的程序实体</td></tr></tbody></table><h2 id=编写文档规则>
+编写文档规则
+<a class=anchor href=#%e7%bc%96%e5%86%99%e6%96%87%e6%a1%a3%e8%a7%84%e5%88%99>#</a>
+</h2><ol>
+<li>注释: <code>// xxx</code></li><li>段落：行首字母大写</li><li>换行：添加一个注释空行</li><li>预格式化（示例代码）：行首缩进</li><li>在<code>package</code>, <code>const</code>, <code>type</code>, <code>func</code>等关键字上面并且紧邻关键字的注释才会被展示
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#75715e>// 此行注释被省略
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// 此行注释被展示 
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 
+</span></span></span><span style=display:flex><span><span style=color:#75715e>// 此行注释被展示2 
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#f92672>package</span> <span style=color:#a6e22e>banana</span>
+</span></span></code></pre></div></li><li><code>type</code>, <code>const</code>, <code>func</code>以名称为注释的开头, package以Package name为注释的开头
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=display:flex><span><span style=color:#75715e>// Package banana ...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#f92672>package</span> <span style=color:#a6e22e>banana</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Xyz ...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>const</span> <span style=color:#a6e22e>Xyz</span> = <span style=color:#ae81ff>1</span>
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Abc ...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>type</span> <span style=color:#a6e22e>Abc</span> <span style=color:#66d9ef>struct</span> {}
+</span></span><span style=display:flex><span>
+</span></span><span style=display:flex><span><span style=color:#75715e>// Bcd ...
+</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#66d9ef>func</span> <span style=color:#a6e22e>Bcd</span>() {}
+</span></span></code></pre></div></li><li>package注释应不超过三行， 如果超过三行，应放到<code>doc.go</code>中</li><li>如果有多个package注释，按照文件名排序显示， 最多显示523字节</li></ol><h2 id=godoc>
+Godoc
+<a class=anchor href=#godoc>#</a>
+</h2><p>用途及用法于<code>go doc</code>类似，但可用于http服务器，方便文档查看。</p><h3 id=安装>
+安装
+<a class=anchor href=#%e5%ae%89%e8%a3%85>#</a>
+</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>go install golang.org/x/tools/cmd/godoc@latest
+</span></span></code></pre></div><h3 id=使用方法-1>
+使用方法
+<a class=anchor href=#%e4%bd%bf%e7%94%a8%e6%96%b9%e6%b3%95-1>#</a>
+</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-bash data-lang=bash><span style=display:flex><span>godoc -http :8080 --index -play
+</span></span></code></pre></div><p>然后浏览器访问<code>http://127.0.0.1:8080</code>即可</p><h2 id=参考文档>
+参考文档
+<a class=anchor href=#%e5%8f%82%e8%80%83%e6%96%87%e6%a1%a3>#</a>
+</h2><ul>
+<li><a href=https://golang.org/cmd/go/#hdr-Show_documentation_for_package_or_symbol>Go doc官方说明</a></li><li><a href=https://blog.golang.org/godoc>Godoc官方博文</a></li><li><a href=https://godoc.org/github.com/fluhus/godoc-tricks>Godoc技巧</a></li></ul></article><footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div></footer><label for=menu-control class="hidden book-menu-overlay"></label>
+</div><aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#作用>作用</a></li><li><a href=#使用方法>使用方法</a></li><li><a href=#编写文档规则>编写文档规则</a></li><li><a href=#godoc>Godoc</a>
+<ul>
+<li><a href=#安装>安装</a></li><li><a href=#使用方法-1>使用方法</a></li></ul></li><li><a href=#参考文档>参考文档</a></li></ul></nav></div></aside></main></body></html>

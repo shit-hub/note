@@ -1,74 +1,312 @@
-<!doctype html><html lang=en dir=ltr><head><meta name=generator content="Hugo 0.85.0"><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content><meta name=theme-color content="#FFFFFF"><meta property="og:title" content="宝塔面板"><meta property="og:description" content><meta property="og:type" content="article"><meta property="og:url" content="http://note.shit-hub.com/docs/ops/tools/bt_pannel/"><meta property="article:section" content="docs"><title>宝塔面板 | Sanjo's Note</title><link rel=manifest href=/manifest.json><link rel=icon href=/favicon.png type=image/x-icon><link rel=stylesheet href=/book.min.29ec7573efa1fe440b6a4c7fb02b463c6cc982428b0e50b8f81383bdccbcdf70.css integrity="sha256-Kex1c++h/kQLakx/sCtGPGzJgkKLDlC4+BODvcy833A="><script defer src=/en.search.min.181186f0121e93f8c8e64d68f709af8edea0b04fa06ac030e932801b8befd4e5.js integrity="sha256-GBGG8BIek/jI5k1o9wmvjt6gsE+gasAw6TKAG4vv1OU="></script></head><body dir=ltr><input type=checkbox class="hidden toggle" id=menu-control>
-<input type=checkbox class="hidden toggle" id=toc-control><main class="container flex"><aside class=book-menu><div class=book-menu-content><nav><h2 class=book-brand><a href=/><img src=/logo.svg alt=Logo><span>Sanjo's Note</span></a></h2><div class=book-search><input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/><div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul><li><input type=checkbox id=section-4be50b0d8f9a243d0d0b85d5143097d6 class=toggle>
-<label for=section-4be50b0d8f9a243d0d0b85d5143097d6 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/>Dev</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-f3aae2dfb959daf3bd76ab1293f97718 class=toggle>
-<label for=section-f3aae2dfb959daf3bd76ab1293f97718 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/c/>C</a>
-<span>▾</span></label><ul><li><a href=http://note.shit-hub.com/docs/dev/c/callgraph_usage/>Callgraph--函数调用树生成器</a></li><li><a href=http://note.shit-hub.com/docs/dev/c/libevent/>Libevent库</a></li><li><a href=http://note.shit-hub.com/docs/dev/c/inline/>关键字Inline的使用说明</a></li><li><a href=http://note.shit-hub.com/docs/dev/c/__builtin_expect/>__builtin_expect使用</a></li></ul></li><li><input type=checkbox id=section-83b43dc380d89a15292b7c7f90db4d08 class=toggle>
-<label for=section-83b43dc380d89a15292b7c7f90db4d08 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/go/>Go</a>
-<span>▾</span></label><ul><li><a href=http://note.shit-hub.com/docs/dev/go/godoc/>Go doc--文档管理器</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/gomod/>Go mod--依赖管理器</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/init/>Init--初始化函数</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/grpc/>Grpc使用</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/grpcurl/>安装Grpcurl</a></li><li><a href=http://note.shit-hub.com/docs/dev/go/gvm/>使用Gvm更换go版本</a></li></ul></li><li><input type=checkbox id=section-f619b6e327eaa3355b9c0d46a7177537 class=toggle>
-<label for=section-f619b6e327eaa3355b9c0d46a7177537 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/rust/>Rust</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-bacd6c372af370f6c0f6e8f2c97e77c6 class=toggle>
-<label for=section-bacd6c372af370f6c0f6e8f2c97e77c6 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/html/>Html</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-18a1ed8932c892987ac4d41b8b6e2862 class=toggle>
-<label for=section-18a1ed8932c892987ac4d41b8b6e2862 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/shell/>Shell</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-a25fe3d5e31775b296acf374d7cdac92 class=toggle>
-<label for=section-a25fe3d5e31775b296acf374d7cdac92 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/python/>Python</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-cba791f4590f972e87b05243471ea9d0 class=toggle>
-<label for=section-cba791f4590f972e87b05243471ea9d0 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/embedded/>Embedded</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-ee67ceb555234cdb4d5811054af58f1e class=toggle>
-<label for=section-ee67ceb555234cdb4d5811054af58f1e class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/typescript/>Typescript</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-f579a6824312ae990e12bf4f08f15c52 class=toggle>
-<label for=section-f579a6824312ae990e12bf4f08f15c52 class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/data_structure/>Data Structure</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-084e06af829cf07f4d764b9d738b25df class=toggle>
-<label for=section-084e06af829cf07f4d764b9d738b25df class="flex justify-between"><a href=http://note.shit-hub.com/docs/dev/design_patterns/>Design Patterns</a>
-<span>▾</span></label><ul></ul></li></ul></li><li><input type=checkbox id=section-5b57649c0c94af0841dac91e624830af class=toggle checked>
-<label for=section-5b57649c0c94af0841dac91e624830af class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/>Ops</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-55634a842581e88f2b6b4ba234a340f1 class=toggle>
-<label for=section-55634a842581e88f2b6b4ba234a340f1 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/os/>OS</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-a7fa76239b3f254712a0bd00737c9cf7 class=toggle>
-<label for=section-a7fa76239b3f254712a0bd00737c9cf7 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/os/linux/>Linux</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-3b75d512b66a3f6a9311ac4eb390fc52 class=toggle>
-<label for=section-3b75d512b66a3f6a9311ac4eb390fc52 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/os/mac/>Mac</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-10aceb9432f560832a1eb9da32b37598 class=toggle>
-<label for=section-10aceb9432f560832a1eb9da32b37598 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/os/windows/>Windows</a>
-<span>▾</span></label><ul></ul></li></ul></li><li><input type=checkbox id=section-0ae46ccd2a86c836c12df1c42962baec class=toggle>
-<label for=section-0ae46ccd2a86c836c12df1c42962baec class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/git/>Git</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-ce1a0b2249b91257b6eb9b13ba184d57 class=toggle>
-<label for=section-ce1a0b2249b91257b6eb9b13ba184d57 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/git/gitlab/>Gitlab</a>
-<span>▾</span></label><ul></ul></li></ul></li><li><input type=checkbox id=section-8b4f6cc173b540c44c996dbd71828c31 class=toggle>
-<label for=section-8b4f6cc173b540c44c996dbd71828c31 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/blog/>Blog</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-7a7877f8ee9a7bdd40d33094b29ce86d class=toggle checked>
-<label for=section-7a7877f8ee9a7bdd40d33094b29ce86d class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/tools/>Tools</a>
-<span>▾</span></label><ul><li><a href=http://note.shit-hub.com/docs/ops/tools/accurev/>Accurev使用</a></li><li><a href=http://note.shit-hub.com/docs/ops/tools/samba/>Samba</a></li><li><a href=http://note.shit-hub.com/docs/ops/tools/swagger/>Swagger</a></li><li><a href=http://note.shit-hub.com/docs/ops/tools/bt_pannel/ class=active>宝塔面板</a></li><li><a href=http://note.shit-hub.com/docs/ops/tools/v2ray/>SS/V2ray搭建</a></li></ul></li><li><input type=checkbox id=section-b424141921a30487c09eab3a187e5859 class=toggle>
-<label for=section-b424141921a30487c09eab3a187e5859 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/monitoring/>Monitoring</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-dd13ca0b1791f4b1ce5f65264a4c2870 class=toggle>
-<label for=section-dd13ca0b1791f4b1ce5f65264a4c2870 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/virtualization/>Virtualization</a>
-<span>▾</span></label><ul><li><input type=checkbox id=section-0c43635159f56a3eaaed5254248b6848 class=toggle>
-<label for=section-0c43635159f56a3eaaed5254248b6848 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/virtualization/kvm/>Kvm</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-a392852729d13eeca7e8425af8404d41 class=toggle>
-<label for=section-a392852729d13eeca7e8425af8404d41 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/virtualization/docker/>Docker</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-397d882613a10ac4c350e31b1fb75480 class=toggle>
-<label for=section-397d882613a10ac4c350e31b1fb75480 class="flex justify-between"><a href=http://note.shit-hub.com/docs/ops/virtualization/kubernetes/>Kubernetes</a>
-<span>▾</span></label><ul></ul></li></ul></li></ul></li><li><input type=checkbox id=section-b8aef4a4c06a66376909add3cb03de9e class=toggle>
-<label for=section-b8aef4a4c06a66376909add3cb03de9e class="flex justify-between"><a href=http://note.shit-hub.com/docs/sec/>Sec</a>
-<span>▾</span></label><ul></ul></li><li><input type=checkbox id=section-9df867f1ccb076f4c1a4602e12169b93 class=toggle>
-<label for=section-9df867f1ccb076f4c1a4602e12169b93 class="flex justify-between"><a href=http://note.shit-hub.com/docs/others/>Others</a>
-<span>▾</span></label><ul><li><a href=http://note.shit-hub.com/docs/others/dome/>职场相关</a></li></ul></li></ul><p align=center><img align=center src=/gopher.gif></p></nav><script>(function(){var a=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(b){localStorage.setItem("menu.scrollTop",a.scrollTop)}),a.scrollTop=localStorage.getItem("menu.scrollTop")})()</script></div></aside><div class=book-page><header class=book-header><div class="flex align-center justify-between"><label for=menu-control><img src=/svg/menu.svg class=book-icon alt=Menu></label>
+<!doctype html><html lang=en dir=ltr>
+<head>
+<meta name=generator content="Hugo 0.93.1">
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content>
+<meta name=theme-color content="#FFFFFF"><meta property="og:title" content="宝塔面板">
+<meta property="og:description" content>
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://note.shit-hub.com/docs/ops/tools/bt_pannel/"><meta property="article:section" content="docs">
+<title>宝塔面板 | Sanjo's Note</title><link rel=manifest href=/manifest.json>
+<link rel=icon href=/favicon.png type=image/x-icon>
+<link rel=stylesheet href=/book.min.29ec7573efa1fe440b6a4c7fb02b463c6cc982428b0e50b8f81383bdccbcdf70.css integrity="sha256-Kex1c++h/kQLakx/sCtGPGzJgkKLDlC4+BODvcy833A=">
+<script defer src=/en.search.min.db412e0d692cc9ac10c9a87942cec79a7b3630f3060879205bd2534691fa45f2.js integrity="sha256-20EuDWksyawQyah5Qs7Hmns2MPMGCHkgW9JTRpH6RfI="></script>
+</head><body dir=ltr>
+<input type=checkbox class="hidden toggle" id=menu-control>
+<input type=checkbox class="hidden toggle" id=toc-control>
+<main class="container flex">
+<aside class=book-menu>
+<div class=book-menu-content>
+<nav>
+<h2 class=book-brand>
+<a href=/><img src=/logo.svg alt=Logo><span>Sanjo's Note</span>
+</a>
+</h2><div class=book-search>
+<input type=text id=book-search-input placeholder=Search aria-label=Search maxlength=64 data-hotkeys=s/>
+<div class="book-search-spinner hidden"></div><ul id=book-search-results></ul></div><ul>
+<li>
+<input type=checkbox id=section-4be50b0d8f9a243d0d0b85d5143097d6 class=toggle>
+<label for=section-4be50b0d8f9a243d0d0b85d5143097d6 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/>Dev</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-f3aae2dfb959daf3bd76ab1293f97718 class=toggle>
+<label for=section-f3aae2dfb959daf3bd76ab1293f97718 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/c/>C</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a href=http://note.shit-hub.com/docs/dev/c/callgraph_usage/>Callgraph--函数调用树生成器</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/c/libevent/>Libevent库</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/c/inline/>关键字Inline的使用说明</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/c/__builtin_expect/>__builtin_expect使用</a>
+</li></ul></li><li>
+<input type=checkbox id=section-83b43dc380d89a15292b7c7f90db4d08 class=toggle>
+<label for=section-83b43dc380d89a15292b7c7f90db4d08 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/go/>Go</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a href=http://note.shit-hub.com/docs/dev/go/godoc/>Go doc--文档管理器</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/gomod/>Go mod--依赖管理器</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/init/>Init--初始化函数</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/grpc/>Grpc使用</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/grpcurl/>安装Grpcurl</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/dev/go/gvm/>使用Gvm更换go版本</a>
+</li></ul></li><li>
+<input type=checkbox id=section-f619b6e327eaa3355b9c0d46a7177537 class=toggle>
+<label for=section-f619b6e327eaa3355b9c0d46a7177537 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/rust/>Rust</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-bacd6c372af370f6c0f6e8f2c97e77c6 class=toggle>
+<label for=section-bacd6c372af370f6c0f6e8f2c97e77c6 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/html/>Html</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-18a1ed8932c892987ac4d41b8b6e2862 class=toggle>
+<label for=section-18a1ed8932c892987ac4d41b8b6e2862 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/shell/>Shell</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-a25fe3d5e31775b296acf374d7cdac92 class=toggle>
+<label for=section-a25fe3d5e31775b296acf374d7cdac92 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/python/>Python</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-cba791f4590f972e87b05243471ea9d0 class=toggle>
+<label for=section-cba791f4590f972e87b05243471ea9d0 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/embedded/>Embedded</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-ee67ceb555234cdb4d5811054af58f1e class=toggle>
+<label for=section-ee67ceb555234cdb4d5811054af58f1e class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/typescript/>Typescript</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-f579a6824312ae990e12bf4f08f15c52 class=toggle>
+<label for=section-f579a6824312ae990e12bf4f08f15c52 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/data_structure/>Data Structure</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-084e06af829cf07f4d764b9d738b25df class=toggle>
+<label for=section-084e06af829cf07f4d764b9d738b25df class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/dev/design_patterns/>Design Patterns</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li></ul></li><li>
+<input type=checkbox id=section-5b57649c0c94af0841dac91e624830af class=toggle checked>
+<label for=section-5b57649c0c94af0841dac91e624830af class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/>Ops</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-55634a842581e88f2b6b4ba234a340f1 class=toggle>
+<label for=section-55634a842581e88f2b6b4ba234a340f1 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/os/>OS</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-a7fa76239b3f254712a0bd00737c9cf7 class=toggle>
+<label for=section-a7fa76239b3f254712a0bd00737c9cf7 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/os/linux/>Linux</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-3b75d512b66a3f6a9311ac4eb390fc52 class=toggle>
+<label for=section-3b75d512b66a3f6a9311ac4eb390fc52 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/os/mac/>Mac</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-10aceb9432f560832a1eb9da32b37598 class=toggle>
+<label for=section-10aceb9432f560832a1eb9da32b37598 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/os/windows/>Windows</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li></ul></li><li>
+<input type=checkbox id=section-0ae46ccd2a86c836c12df1c42962baec class=toggle>
+<label for=section-0ae46ccd2a86c836c12df1c42962baec class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/git/>Git</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-ce1a0b2249b91257b6eb9b13ba184d57 class=toggle>
+<label for=section-ce1a0b2249b91257b6eb9b13ba184d57 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/git/gitlab/>Gitlab</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li></ul></li><li>
+<input type=checkbox id=section-8b4f6cc173b540c44c996dbd71828c31 class=toggle>
+<label for=section-8b4f6cc173b540c44c996dbd71828c31 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/blog/>Blog</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-7a7877f8ee9a7bdd40d33094b29ce86d class=toggle checked>
+<label for=section-7a7877f8ee9a7bdd40d33094b29ce86d class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/tools/>Tools</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a href=http://note.shit-hub.com/docs/ops/tools/accurev/>Accurev使用</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/ops/tools/samba/>Samba</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/ops/tools/swagger/>Swagger</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/ops/tools/bt_pannel/ class=active>宝塔面板</a>
+</li><li>
+<a href=http://note.shit-hub.com/docs/ops/tools/v2ray/>SS/V2ray搭建</a>
+</li></ul></li><li>
+<input type=checkbox id=section-b424141921a30487c09eab3a187e5859 class=toggle>
+<label for=section-b424141921a30487c09eab3a187e5859 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/monitoring/>Monitoring</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-dd13ca0b1791f4b1ce5f65264a4c2870 class=toggle>
+<label for=section-dd13ca0b1791f4b1ce5f65264a4c2870 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/virtualization/>Virtualization</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<input type=checkbox id=section-0c43635159f56a3eaaed5254248b6848 class=toggle>
+<label for=section-0c43635159f56a3eaaed5254248b6848 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/virtualization/kvm/>Kvm</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-a392852729d13eeca7e8425af8404d41 class=toggle>
+<label for=section-a392852729d13eeca7e8425af8404d41 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/virtualization/docker/>Docker</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-397d882613a10ac4c350e31b1fb75480 class=toggle>
+<label for=section-397d882613a10ac4c350e31b1fb75480 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/ops/virtualization/kubernetes/>Kubernetes</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li></ul></li></ul></li><li>
+<input type=checkbox id=section-b8aef4a4c06a66376909add3cb03de9e class=toggle>
+<label for=section-b8aef4a4c06a66376909add3cb03de9e class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/sec/>Sec</a>
+<span>▾</span>
+</label>
+<ul>
+</ul></li><li>
+<input type=checkbox id=section-9df867f1ccb076f4c1a4602e12169b93 class=toggle>
+<label for=section-9df867f1ccb076f4c1a4602e12169b93 class="flex justify-between">
+<a href=http://note.shit-hub.com/docs/others/>Others</a>
+<span>▾</span>
+</label>
+<ul>
+<li>
+<a href=http://note.shit-hub.com/docs/others/dome/>职场相关</a>
+</li></ul></li></ul><p align=center>
+<img align=center src=/gopher.gif>
+</p></nav><script>(function(){var e=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+</div></aside><div class=book-page>
+<header class=book-header>
+<div class="flex align-center justify-between">
+<label for=menu-control>
+<img src=/svg/menu.svg class=book-icon alt=Menu>
+</label>
 <strong>宝塔面板</strong>
-<label for=toc-control><img src=/svg/toc.svg class=book-icon alt="Table of Contents"></label></div><aside class="hidden clearfix"><nav id=TableOfContents><ul><li><ul><li></li></ul></li></ul></nav></aside></header><article class=markdown><h4 id=适用环境>适用环境
-<a class=anchor href=#%e9%80%82%e7%94%a8%e7%8e%af%e5%a2%83>#</a></h4><ul><li>虚拟主机</li><li>本地环境</li><li>云服务器</li></ul><h4 id=特性>特性
-<a class=anchor href=#%e7%89%b9%e6%80%a7>#</a></h4><ul><li>一键配置服务器环境（LAMP/LNMP）</li><li>一键安全重启</li><li>一键创建管理网站、ftp、数据库</li><li>一键配置（定期备份、数据导入、伪静态、301、SSL、子目录、反向代理、切换PHP版本）</li><li>一键安装常用PHP扩展(fileinfo、intl、opcache、imap、memcache、apc、redis、ioncube、imagick)</li><li>数据库一键导入导出</li><li>系统监控（CPU、内存、磁盘IO、网络IO）</li><li>防火墙端口放行SSH开启与关闭及SSH端口更改禁PING开启或关闭方便高效的文件管理器（上传、下载、压缩、解压、查看、编辑等等）计划任务（定期备份、日志切割、shell脚本）软件管理（一键安装、卸载、版本切换）</li></ul><h4 id=安装>安装
-<a class=anchor href=#%e5%ae%89%e8%a3%85>#</a></h4><ul><li>centos：</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>yum install -y wget <span style=color:#f92672>&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span style=color:#f92672>&amp;&amp;</span> sh install.sh
-</code></pre></div><ul><li>ubuntu/deepin:</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span style=color:#f92672>&amp;&amp;</span> sudo bash install.sh
-</code></pre></div><ul><li>Debian:</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span style=color:#f92672>&amp;&amp;</span> bash install.sh
-</code></pre></div><ul><li>Fedora:</li></ul><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh>wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span style=color:#f92672>&amp;&amp;</span> bash install.sh
-</code></pre></div><h4 id=登录>登录
-<a class=anchor href=#%e7%99%bb%e5%bd%95>#</a></h4><p>安装完成后会显示以下一些信息：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yml data-lang=yml><span style=color:#f92672>Bt-Panel</span>: <span style=color:#ae81ff>http://A.B.C.D:8888/********</span>
-<span style=color:#f92672>username</span>: <span style=color:#75715e>******</span>
-<span style=color:#f92672>password</span>: <span style=color:#75715e>******</span>
-</code></pre></div><p>使用浏览器方位<code>Bt-Panel</code>后面的地址，然后根据提供的用户名和密码进行登录即可</p><blockquote><p>A.B.C.D是你设备的IP地址，初始登录需要时候后面的八位随机字符
-username和password也是随机生成的，可以登录后进行修改</p></blockquote><h4 id=安装环境>安装环境
-<a class=anchor href=#%e5%ae%89%e8%a3%85%e7%8e%af%e5%a2%83>#</a></h4><p>登录后默认会提示安装LAMP或者LNMP，按需选择，等待完成即可</p><blockquote><p>LAMP : Linux + Apache + Mysql + PHP
-LNMP : Linux + Nginx + Mysql + PHP</p></blockquote><h4 id=使用>使用
-<a class=anchor href=#%e4%bd%bf%e7%94%a8>#</a></h4><p>一般在页面进行操作，不过也提供终端命令操作，详情请参考：
-<a href=https://www.bt.cn/btcode.html>https://www.bt.cn/btcode.html</a></p></article><footer class=book-footer><div class="flex flex-wrap justify-between"></div></footer><label for=menu-control class="hidden book-menu-overlay"></label></div><aside class=book-toc><div class=book-toc-content><nav id=TableOfContents><ul><li><ul><li></li></ul></li></ul></nav></div></aside></main></body></html>
+<label for=toc-control>
+<img src=/svg/toc.svg class=book-icon alt="Table of Contents">
+</label>
+</div><aside class="hidden clearfix">
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li></li></ul></li></ul></nav></aside></header><article class=markdown><h4 id=适用环境>
+适用环境
+<a class=anchor href=#%e9%80%82%e7%94%a8%e7%8e%af%e5%a2%83>#</a>
+</h4><ul>
+<li>虚拟主机</li><li>本地环境</li><li>云服务器</li></ul><h4 id=特性>
+特性
+<a class=anchor href=#%e7%89%b9%e6%80%a7>#</a>
+</h4><ul>
+<li>一键配置服务器环境（LAMP/LNMP）</li><li>一键安全重启</li><li>一键创建管理网站、ftp、数据库</li><li>一键配置（定期备份、数据导入、伪静态、301、SSL、子目录、反向代理、切换PHP版本）</li><li>一键安装常用PHP扩展(fileinfo、intl、opcache、imap、memcache、apc、redis、ioncube、imagick)</li><li>数据库一键导入导出</li><li>系统监控（CPU、内存、磁盘IO、网络IO）</li><li>防火墙端口放行SSH开启与关闭及SSH端口更改禁PING开启或关闭方便高效的文件管理器（上传、下载、压缩、解压、查看、编辑等等）计划任务（定期备份、日志切割、shell脚本）软件管理（一键安装、卸载、版本切换）</li></ul><h4 id=安装>
+安装
+<a class=anchor href=#%e5%ae%89%e8%a3%85>#</a>
+</h4><ul>
+<li>centos：</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>yum install -y wget <span style=color:#f92672>&amp;&amp;</span> wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span style=color:#f92672>&amp;&amp;</span> sh install.sh
+</span></span></code></pre></div><ul>
+<li>ubuntu/deepin:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span style=color:#f92672>&amp;&amp;</span> sudo bash install.sh
+</span></span></code></pre></div><ul>
+<li>Debian:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>wget -O install.sh http://download.bt.cn/install/install-ubuntu_6.0.sh <span style=color:#f92672>&amp;&amp;</span> bash install.sh
+</span></span></code></pre></div><ul>
+<li>Fedora:</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sh data-lang=sh><span style=display:flex><span>wget -O install.sh http://download.bt.cn/install/install_6.0.sh <span style=color:#f92672>&amp;&amp;</span> bash install.sh
+</span></span></code></pre></div><h4 id=登录>
+登录
+<a class=anchor href=#%e7%99%bb%e5%bd%95>#</a>
+</h4><p>安装完成后会显示以下一些信息：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-yml data-lang=yml><span style=display:flex><span><span style=color:#f92672>Bt-Panel</span>: <span style=color:#ae81ff>http://A.B.C.D:8888/********</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>username</span>: <span style=color:#75715e>******</span>
+</span></span><span style=display:flex><span><span style=color:#f92672>password</span>: <span style=color:#75715e>******</span>
+</span></span></code></pre></div><p>使用浏览器方位<code>Bt-Panel</code>后面的地址，然后根据提供的用户名和密码进行登录即可</p><blockquote>
+<p>A.B.C.D是你设备的IP地址，初始登录需要时候后面的八位随机字符
+username和password也是随机生成的，可以登录后进行修改</p></blockquote><h4 id=安装环境>
+安装环境
+<a class=anchor href=#%e5%ae%89%e8%a3%85%e7%8e%af%e5%a2%83>#</a>
+</h4><p>登录后默认会提示安装LAMP或者LNMP，按需选择，等待完成即可</p><blockquote>
+<p>LAMP : Linux + Apache + Mysql + PHP
+LNMP : Linux + Nginx + Mysql + PHP</p></blockquote><h4 id=使用>
+使用
+<a class=anchor href=#%e4%bd%bf%e7%94%a8>#</a>
+</h4><p>一般在页面进行操作，不过也提供终端命令操作，详情请参考：
+<a href=https://www.bt.cn/btcode.html>https://www.bt.cn/btcode.html</a></p></article><footer class=book-footer>
+<div class="flex flex-wrap justify-between">
+</div></footer><label for=menu-control class="hidden book-menu-overlay"></label>
+</div><aside class=book-toc>
+<div class=book-toc-content>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li></li></ul></li></ul></nav></div></aside></main></body></html>
