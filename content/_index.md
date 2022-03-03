@@ -4,23 +4,15 @@ type: docs
 bookToC: false
 ---
 
-## Author Information
 {{< columns >}}
-- Name: Sanjo Heron
-- Email: sanjo.heron@gmail.com
-- Brithday：1997/04/30
-- Education：
-  - GuangZhou University
-  - Bachelor of Electrical Engineering, 2019
-- Employment History:
-  - Casa System, Guangzhou
-    - 2019 - Present
-    - Embedded Software Development Engineer
-- Programming Ability
-  - Programming Languages:
-    - Major: C/Go/Rust 
-    - Minor: Shell/C++/HTML/Python
-  - Platform Ability: AVR/stm32/Linux/Docker/Kubernetes...
+## 站点说明
+个人博客站点，记录一名Gopher的编程之路
+
+## 作者信息
+- 名字：Sanjo Heron
+- 邮箱：sanjo.heron@gmail.com
+- Github：[shit-hub(Sanjo Heron IT Hub)](https://github.com/shit-hub)
+  
 <--->
 ![image](favicon.png)
 {{< /columns >}}
