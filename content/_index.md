@@ -16,8 +16,6 @@ bookToC: false
 - Github：[shit-hub(Sanjo Heron IT Hub)](https://github.com/shit-hub)
 - 个人导航主页：[Gopher Hub](https://www.shit-hub.com)
 
-
-
 <--->
 
 ![qrcode](qrcode.jpg)
