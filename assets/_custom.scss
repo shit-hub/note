@@ -2,3 +2,15 @@
 
 // @import "plugins/numbered";
 @import "plugins/scrollbars";
+
+.markdown {
+    .highlight pre {
+        border: 1px solid rgb(132, 131, 131);
+        border-radius: 16px;
+    }
+}
+
+.book-page {
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
