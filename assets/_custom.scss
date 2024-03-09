@@ -4,6 +4,21 @@
 @import "plugins/scrollbars";
 
 .markdown {
+    h2 {
+        color: rgb(24, 173, 237);
+    }
+    h3 {
+        color: rgb(64, 183, 234);
+    }
+    h4 {
+        color: rgb(101, 195, 235);
+    }
+    table tr th{
+        border: 1px solid rgb(217, 240, 251);
+    }
+    table tr td{
+        border: 1px solid rgb(217, 240, 251);
+    }
     .highlight pre {
         border: 1px solid rgb(132, 131, 131);
         border-radius: 16px;
