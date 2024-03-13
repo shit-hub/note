@@ -28,15 +28,8 @@ theme = "book"
   # Can be overwritten by same param in page frontmatter
   BookComments = false
 
-    # /!\ This is an experimental feature, might be removed or changed at any time
+  # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables portable links and link checks in markdown pages.
   # Portable links meant to work with text editors and let you write markdown without {{< relref >}} shortcode
   # Theme will print warning if page referenced in markdown does not exists.
   BookPortableLinks = true
-
-
-[markup]
-  [markup.highlight]
-  # style = 'tango'
-    style = 'perldoc'
-    tabWidth = 4

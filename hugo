@@ -1,0 +1,68 @@
+#!/bin/sh
+
+help() {
+    echo "Usage: $0 <action> [options]
+
+    Action:
+        new <docs/folder> [filename]    --  create new content
+        build                           --  build blog
+        run                             --  run live server
+    "
+}
+
+version() {
+    hugo version
+}
+
+docs() {
+    hugo new --kind=docs $1
+}
+
+folder() {
+    hugo new --kind=folder $1
+}
+
+new() {
+    echo $*
+    case $1 in 
+        docs)
+            docs $2
+            ;;
+        folder)
+            folder $2
+            ;;
+        *)
+            help
+            ;;
+    esac
+}
+
+build() {
+    hugo --minify
+}
+
+run() {
+    hugo server --minify --bind 0.0.0.0
+}
+
+case $1 in
+    new)
+        new $2 $3
+        ;;
+    build)
+        build
+        ;;
+    run)
+        run
+        ;;
+    version)
+        version
+        ;;
+    -h | --help)
+        help
+        ;;
+    *)
+        echo "unknown action $1"
+        help
+        ;;
+esac
