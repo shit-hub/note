@@ -1,0 +1,217 @@
+---
+
+title: G
+
+weight: 2
+
+bookFlatSection: false
+
+bookToc: true
+
+bookHidden: false
+
+bookCollapseSection: false
+
+bookComments: false
+
+---
+
+推荐使用
+
+<!--more-->
+
+`g`是一个 Linux、macOS、Windows 下的命令行工具，可以提供一个便捷的多版本 [go](https://golang.org/) 环境的管理和切换。
+
+## 特性
+
+- 支持列出可供安装的 go 版本号
+- 支持列出已安装的 go 版本号
+- 支持在本地安装多个 go 版本
+- 支持卸载已安装的 go 版本
+- 支持在已安装的 go 版本之间自由切换
+- 支持清空安装包文件缓存
+- 支持软件自我更新（>= 1.5.0）
+- 支持软件绿色卸载（>= 1.5.0）
+
+## 安装
+
+### 自动化安装
+
+{{< tabs "auto install" >}}
+
+{{< tab "Linux/MacOS" >}}
+
+```shell
+# 建议安装前清空`GOROOT`、`GOBIN`等环境变量
+$ curl -sSL https://raw.githubusercontent.com/voidint/g/master/install.sh | bash
+$ echo "unalias g" >> ~/.bashrc # 可选。若其他程序（如'git'）使用了'g'作为别名。
+$ source "$HOME/.g/env"
+```
+
+{{< /tab >}}
+
+{{< tab "Windows（适用于 pwsh）" >}}
+
+```pwsh
+iwr https://raw.githubusercontent.com/voidint/g/master/install.ps1 -useb | iex
+```
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+### 手动安装
+
+{{< tabs "manaul install" >}}
+
+{{< tab "Linux/MacOS" >}}
+
+- 创建 g 家目录（推荐`~/.g`目录）
+- 下载[release](https://github.com/voidint/g/releases)的二进制压缩包，并解压至 g 家目录下的 bin 子目录中（即`~/.g/bin`目录）。
+- 将所需的环境变量写入`~/.g/env`文件
+
+  ```shell
+  $ cat >~/.g/env <<'EOF'
+  #!/bin/sh
+  # g shell setup
+  export GOROOT="${HOME}/.g/go"
+  export PATH="${HOME}/.g/bin:${GOROOT}/bin:$PATH"
+  export G_MIRROR=https://golang.google.cn/dl/
+  EOF
+  ```
+
+- 将`~/.g/env`导入到 shell 环境配置文件（如`~/.bashrc`、`~/.zshrc`...）
+
+  ```shell
+  $ cat >>~/.bashrc <<'EOF'
+  # g shell setup
+  if [ -f "${HOME}/.g/env" ]; then
+      . "${HOME}/.g/env"
+  fi
+  EOF
+  ```
+
+- 启用环境变量
+
+  ```shell
+  source ~/.bashrc # 或source ~/.zshrc
+  ```
+
+{{< /tab >}}
+
+{{< tab "Windows" >}}
+
+- 创建目录`mkdir ~/.g/bin`
+- 下载[release](https://github.com/voidint/g/releases)的 windows 版本的二进制压缩包, 解压之后放到`~/.g/bin`目录下
+- 默认二进制文件名是 g.exe, 如果你已经用 g 这个命令已经用作为 git 的缩写，那么你可以把 g.exe 改为其他名字，如 gvm.exe
+- 执行命令`code $PROFILE`, 这个命令会用 vscode 打开默认的 powershell 配置文件
+- 在 powershell 的默认配置文件中加入如下内容
+
+  ```ps1
+  $env:GOROOT="$HOME\.g\go"
+  $env:Path=-join("$HOME\.g\bin;", "$env:GOROOT\bin;", "$env:Path")
+  ```
+
+- 再次打开 powershell 终端，就可以使用 g 或者 gvm 命令了
+
+{{< /tab >}}
+
+{{< /tabs >}}
+
+## 使用
+
+查询当前可供安装的`stable`状态的 go 版本
+
+```shell
+$ g ls-remote stable
+  1.19.10
+  1.20.5
+```
+
+安装目标 go 版本`1.20.5`
+
+```shell
+$ g install 1.14.7
+Downloading 100% [===============] (92/92 MB, 12 MB/s)               
+Computing checksum with SHA256
+Checksums matched
+Now using go1.20.5
+```
+
+查询已安装的 go 版本
+
+```shell
+$ g ls
+  1.19.10
+* 1.20.5
+```
+
+查询可供安装的所有 go 版本
+
+```shell
+$ g ls-remote
+  1
+  1.2.2
+  1.3
+  1.3.1
+  ...    // 省略若干版本
+  1.19.10
+  1.20rc1
+  1.20rc2
+  1.20rc3
+  1.20
+  1.20.1
+  1.20.2
+  1.20.3
+  1.20.4
+* 1.20.5
+```
+
+切换到另一个已安装的 go 版本
+
+```shell
+$ g use 1.19.10
+go version go1.19.10 darwin/arm64
+```
+
+卸载一个已安装的 go 版本
+
+```shell
+$ g uninstall 1.19.10
+Uninstalled go1.19.10
+```
+
+清空 go 安装包文件缓存
+
+```shell
+$ g clean 
+Remove go1.18.10.darwin-arm64.tar.gz
+Remove go1.19.10.darwin-arm64.tar.gz
+Remove go1.20.5.darwin-arm64.tar.gz
+```
+
+查看 g 版本信息
+
+``` shell
+g version 1.5.0
+build: 2023-01-01T21:01:52+08:00
+branch: master
+commit: cec84a3f4f927adb05018731a6f60063fd2fa216
+```
+
+更新 g 软件本身
+
+```shell
+$ g self update
+You are up to date! g v1.5.0 is the latest version.
+```
+
+卸载 g 软件本身
+
+```shell
+$ g self uninstall
+Are you sure you want to uninstall g? (Y/n)
+y
+Remove /Users/voidint/.g/bin/g
+Remove /Users/voidint/.g
+```
