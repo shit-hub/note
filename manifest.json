@@ -1,6 +1,6 @@
 {
-  "name": "Sanjo's Note",
-  "short_name": "Sanjo's Note",
+  "name": "Gopher笔记",
+  "short_name": "Gopher笔记",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
