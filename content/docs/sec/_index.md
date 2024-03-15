@@ -1,16 +1,23 @@
 ---
-title: "Sec"
+
+title: Sec（安全）
+
 weight: 3
+
 bookFlatSection: false
+
 bookToc: true
+
 bookHidden: false
+
 bookCollapseSection: true
+
 bookComments: false
+
 ---
 
 <!--more-->
 
-## Security
-Record something about software security. 
-## Directory
-{{<section>}}
+## 目录
+
+{{< section >}}
